@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  consumer:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-10-30T18:42:17.651724177Z"
+    description: A Helm chart for Kubernetes
+    digest: 3f15825412575beacc0dcc111f81005c2a8e34289dd043b2aed97013fb5537dd
+    name: consumer
+    type: application
+    urls:
+    - https://github.com/marthydavid/helm-charts/releases/download/consumer-0.1.0/consumer-0.1.0.tgz
+    version: 0.1.0
+  producer:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-10-30T18:42:17.795783169Z"
+    description: A Helm chart for Kubernetes
+    digest: 260dd7b2e94e1c5c21304e58fb3aae66b707ad1b025d27602075b46977bfc0ec
+    name: producer
+    type: application
+    urls:
+    - https://github.com/marthydavid/helm-charts/releases/download/producer-0.1.0/producer-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-10-30T18:42:17.795790469Z"
