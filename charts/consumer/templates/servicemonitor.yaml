@@ -1,0 +1,15 @@
+{{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "consumer.fullname" . }}
+  labels:
+    {{- include "consumer.labels" . | nindent 4 }}
+spec:
+
+  ports:
+    - port: {{ .Values.service.port }}
+      path: /metrics
+  selector:
+    {{- include "consumer.selectorLabels" . | nindent 4 }}
+{{- end }}
