@@ -8,9 +8,8 @@ metadata:
     {{- include "consumer.labels" . | nindent 4 }}
     release: {{ .Values.metrics.promReleaseLabel }}
 spec:
-
-  ports:
-    - port: {{ .Values.service.port }}
+  endpoints:
+    - port: metrics
       path: /metrics
   selector:
     {{- include "consumer.selectorLabels" . | nindent 4 }}
