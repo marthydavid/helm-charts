@@ -42,6 +42,8 @@ spec:
           {{- end }}
             - name: KAFKA_TOPIC
               value: {{ .Values.consumer.kafka.topic }}
+            - name: KAFKA_CONSUMER_GROUP
+              value: {{ .Values.consumer.kafka.consumerGroup }}
             - name: KAFKA_TOPIC_TEST
               value: {{ .Values.consumer.kafka.topic }}-test
             - name: MESSAGES_PER_SECOND

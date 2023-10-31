@@ -1,10 +1,12 @@
 {{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" -}}
+{{- if .Values.metrics.enabled }}
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: {{ include "producer.fullname" . }}
   labels:
     {{- include "producer.labels" . | nindent 4 }}
+    release: {{ .Values.metrics.promReleaseLabel }}
 spec:
 
   ports:
@@ -12,4 +14,5 @@ spec:
       path: /metrics
   selector:
     {{- include "producer.selectorLabels" . | nindent 4 }}
+{{- end }}
 {{- end }}

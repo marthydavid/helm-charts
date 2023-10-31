@@ -4,7 +4,7 @@
 
 producer:
   enabled: true
-  messagesPerSecond: 100
+  messagesPerSecond: 10
   kafka:
     brokerExistingConfig: false
     brokerConfigMapName: kafka-broker-config
@@ -12,7 +12,7 @@ producer:
     broker: "keda-demo-kafka-bootstrap.strimzi-system.svc:9092"
     topic: "demo"
 
-replicaCount: 1
+replicaCount: 3
 
 image:
   repository: ghcr.io/marthydavid/kafka-keda-golang-producer
@@ -90,3 +90,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+
+metrics:
+  enabled: true
+  promReleaseLabel: kube-prometheus-stack

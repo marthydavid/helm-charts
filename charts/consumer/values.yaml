@@ -4,12 +4,13 @@
 
 consumer:
   enabled: true
-  messagesPerSecond: 10
+  messagesPerSecond: 2
   kafka:
     brokerExistingConfig: false
     brokerConfigMapName: kafka-broker-config
     brokerConfigMapKey: kafka-broker-config-key
     broker: "keda-demo-kafka-bootstrap.strimzi-system.svc:9092"
+    consumerGroup: "demo"
     topic: "demo"
 
 
@@ -91,3 +92,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+
+metrics:
+  enabled: true
+  promReleaseLabel: kube-prometheus-stack
