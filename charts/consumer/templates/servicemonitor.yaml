@@ -12,6 +12,7 @@ spec:
     - port: metrics
       path: /metrics
   selector:
-    {{- include "consumer.selectorLabels" . | nindent 4 }}
+    matchLabels:
+    {{- include "consumer.selectorLabels" . | nindent 6 }}
 {{- end }}
 {{- end }}
