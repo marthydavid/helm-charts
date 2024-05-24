@@ -20,7 +20,7 @@ image:
   repository: ghcr.io/marthydavid/kafka-keda-golang-consumer
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "main"
+  tag: "0.0.1"
 
 imagePullSecrets: []
 nameOverride: ""
