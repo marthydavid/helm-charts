@@ -58,6 +58,17 @@ entries:
   producer:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-06-02T06:16:47.440605414Z"
+    description: 'A Helm chart for Kubernetes + KEDA demo This app could produce messages
+      to a Kafka topic '
+    digest: 4669c124758f8f5d95405843e50eeebb4790fe97b1b1ac2042874c7c39fc7730
+    name: producer
+    type: application
+    urls:
+    - https://github.com/marthydavid/helm-charts/releases/download/producer-0.1.5/producer-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-05-24T10:54:08.205403999Z"
     description: 'A Helm chart for Kubernetes + KEDA demo This app could produce messages
       to a Kafka topic '
@@ -110,4 +121,4 @@ entries:
     urls:
     - https://github.com/marthydavid/helm-charts/releases/download/producer-0.1.0/producer-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-24T10:54:08.205437371Z"
+generated: "2024-06-02T06:16:47.440652572Z"
