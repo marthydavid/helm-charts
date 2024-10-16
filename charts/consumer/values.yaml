@@ -9,18 +9,18 @@ consumer:
     brokerExistingConfig: false
     brokerConfigMapName: kafka-broker-config
     brokerConfigMapKey: kafka-broker-config-key
-    broker: "keda-demo-kafka-bootstrap.strimzi-system.svc:9092"
+    broker: "kafka-kafka-bootstrap.strimzi-system.svc:9092"
     consumerGroup: "demo"
     topic: "demo"
 
 
-replicaCount: 1
+replicaCount: 0
 
 image:
   repository: ghcr.io/marthydavid/kafka-keda-golang-consumer
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.0.3"
+  tag: "0.0.4"
 
 imagePullSecrets: []
 nameOverride: ""
