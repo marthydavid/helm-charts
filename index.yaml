@@ -3,6 +3,17 @@ entries:
   consumer:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-10-16T06:31:14.823080342Z"
+    description: 'A Helm chart for Kubernetes + KEDA demo This app could consume messages
+      from a Kafka topic '
+    digest: 0038f68fae36dbe8bda98828d9aa91c3e2ca3ab56274a09ea6166c04c4d6c9cc
+    name: consumer
+    type: application
+    urls:
+    - https://github.com/marthydavid/helm-charts/releases/download/consumer-0.1.6/consumer-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-05-24T10:54:08.066137457Z"
     description: 'A Helm chart for Kubernetes + KEDA demo This app could consume messages
       from a Kafka topic '
@@ -56,6 +67,17 @@ entries:
     - https://github.com/marthydavid/helm-charts/releases/download/consumer-0.1.0/consumer-0.1.0.tgz
     version: 0.1.0
   producer:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-10-16T06:31:14.922363729Z"
+    description: 'A Helm chart for Kubernetes + KEDA demo This app could produce messages
+      to a Kafka topic '
+    digest: e7e02c2acb1f1ce4aa3444d637d23f0993b0d93d90e9bf71d6c42b81554ccb91
+    name: producer
+    type: application
+    urls:
+    - https://github.com/marthydavid/helm-charts/releases/download/producer-0.1.6/producer-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2024-06-02T06:16:47.440605414Z"
@@ -121,4 +143,4 @@ entries:
     urls:
     - https://github.com/marthydavid/helm-charts/releases/download/producer-0.1.0/producer-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-02T06:16:47.440652572Z"
+generated: "2024-10-16T06:31:14.922446594Z"
